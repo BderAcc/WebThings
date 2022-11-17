@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1;
-    border-radius: 30px;
+    border-radius: 2vmax;
     
 }
 
@@ -40,7 +40,6 @@ body {
     
 }
 
-
 .lp {
     
     display: block;
@@ -61,4 +60,20 @@ body {
     margin-inline-end: 0px;
     text-align: center;
     font-size: 140%;
+}
+
+button {
+    background-color: #e8e8e9;
+    border: none;
+    border-radius: 1vmax;
+    padding: 2% 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #b8b8b9;
 }
