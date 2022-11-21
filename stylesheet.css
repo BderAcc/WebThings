@@ -13,6 +13,7 @@ body {
     justify-content: center;
     z-index: 1;
     border-radius: 2vmax;
+    clip-rule: nonzero;
 }
 
 .Textbox {
@@ -37,15 +38,16 @@ body {
     
 }
 
-.lp {
-    
+.lt {
+    appearance: p;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    text-align: center;
-    font-size: 2vw;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.9vw;
 }
 
 .rp {
@@ -84,10 +86,22 @@ div:has(a:hover) > a:not(:hover) {
     opacity: 0.7;
 }
 
-iframe {
-    border-radius: 1vmax;
+.CatSpinner {
+    width: 100%;
+    height: 35%;
+    justify-content: center;
 }
 
-iframe:hover {
-    opacity: 0.8;
+.CatSpinner > img {
+    height: 100%;
+    width: 35%;
+    display: block;
+    border-radius: 2vmax;
+    box-shadow: 0 0 2px black;
+    transition-duration: 1s;
+}
+
+.CatSpinner > img:hover {
+    box-shadow: 0 0 10px black;
+    transform: translateX(200%) rotateZ(1turn);
 }
