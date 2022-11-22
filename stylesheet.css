@@ -75,11 +75,12 @@ a {
     z-index: 1;
     font-size: 1.5vw;
     cursor: pointer;
-  }
+    transition-duration: 300ms;
+}
 
-  a:hover {
+a:hover {
     background-color: #ddddde;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 4px black;
 }
 
 div:has(a:hover) > a:not(:hover) {
@@ -93,15 +94,16 @@ div:has(a:hover) > a:not(:hover) {
 }
 
 .CatSpinner > img {
+    margin: 0;
     height: 100%;
     width: 35%;
     display: block;
     border-radius: 2vmax;
-    box-shadow: 0 0 2px black;
-    transition-duration: 1s;
+    box-shadow: 0 0 4px black;
+    transition-duration: 3000ms;
 }
 
-.CatSpinner > img:hover {
+.CatSpinner:not(:has(img:hover)) > img {
     box-shadow: 0 0 10px black;
-    transform: translateX(200%) rotateZ(1turn);
+    transform: translateX(50%) rotateY(89deg);
 }
