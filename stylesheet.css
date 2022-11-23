@@ -92,7 +92,6 @@ img {
   box-shadow: 0 0 4px black;
   transition-duration: 300ms;
 }
-
 img:hover {
   box-shadow: 0 0 10px black;
 }
