@@ -36,17 +36,17 @@
   display: block;
   width: 40%;
   height: 40%;
-  background-color: red;
   border: none;
   box-shadow: 2px 2px 4px black;
   border-radius: 1vmax;
   transition-duration: 200ms;
-  grid-column: 1;
-  grid-row: 1;
 }
 .wrapper button:hover {
   opacity: 0.5;
   font-size: x-large;
+  width: 50%;
+  height: 50%;
+  border-radius: 1.2vmax;
 }
 
 .gridItem {
@@ -54,6 +54,24 @@
   color: white;
   font-size: larger;
   font-weight: 600;
+}
+
+.b1 {
+  background-color: #B65C5F;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.b2 {
+  background-color: #66845F;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.b3 {
+  background-color: #5B455F;
+  grid-row: 2;
+  grid-column: 3;
 }
 
 /*# sourceMappingURL=page2.css.map */
