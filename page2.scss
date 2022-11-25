@@ -1,0 +1,64 @@
+$borderHover: 8px;
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/grid.jpg");
+    background-size: 30%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 50% 25%;
+    gap: 0px;
+    place-items: center;
+
+    .Center {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        grid-column: 2;
+        grid-row: 2;
+        font-size: x-large;
+        box-shadow: 1px 1px 4px black;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    button {
+        display: block;
+        width: 40%;
+        height: 40%;
+        background-color: red;
+        border: none;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 1vmax;
+        transition-duration: 200ms;
+        grid-column: 1;
+        grid-row: 1;
+    
+        &:hover {
+            opacity: 0.5;
+            font-size:  x-large;
+        }
+    }
+}
+
+.gridItem {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
