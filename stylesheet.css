@@ -1,5 +1,37 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
+}
+
+#wrapper {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #D2C9A5;
+  display: flex;
+  flex-direction: column;
+}
+
+.Bar {
+  width: 50%;
+  height: 10%;
+  margin-top: 1%;
+  text-align: center;
+  text-justify: inter-cluster;
+  transition-duration: 300ms;
+  font-size: large;
+  background-color: #3B531D;
+  border-style: solid;
+  border-top-right-radius: 0.5vmax;
+  border-bottom-right-radius: 0.5vmax;
+}
+#wrapper:has(.Bar:hover) > .Bar:not(.Bar:hover) {
+  opacity: 0.5;
+  width: 45%;
+}
+.Bar:hover {
+  width: 55%;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
