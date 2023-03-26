@@ -1,6 +1,9 @@
 body {
   margin: 0;
   text-align: center;
+  color: #2c3e50;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 #wrapper {
@@ -9,29 +12,64 @@ body {
   width: 100vmax;
   display: flex;
   justify-content: center;
-  background-color: rgb(220, 220, 220);
+  background-color: #ecf0f1;
 }
 
 #column {
-  background-color: rgb(230, 230, 230);
   height: 100%;
   width: 60%;
 }
 #column header {
+  margin-top: 10px;
   font-size: x-large;
+  text-align: left;
+  display: flex;
+  justify-content: left;
 }
+#column header h1 {
+  transition: 2000ms;
+}
+
+#column header h1:hover {
+  transition: 10ms;
+  transition-timing-function: ease-in-out;
+  translate: 0 -4px 0;
+  color: #1abc9c;
+}
+
 #column #pagescontainer {
+  width: 50%;
+  justify-self: left;
   display: flex;
   justify-content: center;
 }
 #column #pagescontainer a {
+  transition: 100ms;
   padding: 10px;
   padding-left: 60px;
   padding-right: 60px;
   font-size: x-large;
+  text-decoration: none;
+  color: #2c3e50;
 }
 #column #pagescontainer a:hover {
-  background-color: rgb(220, 220, 220);
+  color: #1abc9c;
+  padding-top: 8px;
+  translate: 0 -2px 0
+}
+#column p {
+  margin: 0;
+  margin-top: 50px;
+  font-size: x-large;
+  text-align: left;
 }
 
-/*# sourceMappingURL=style.css.map */
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
